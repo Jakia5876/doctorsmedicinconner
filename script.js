@@ -1,4 +1,4 @@
-// ===== Doctors Medicin Conner - Main JavaScript =====
+// ===== Doctors Medicin Cornner - Main JavaScript =====
 
 // Mobile Menu Toggle
 document.addEventListener('DOMContentLoaded', () => {
