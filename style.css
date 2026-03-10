@@ -94,16 +94,10 @@ input, select, textarea { font-family: inherit; outline: none; border: none; }
   color: var(--primary-dark);
   white-space: nowrap;
 }
-.logo-icon {
-  width: 44px;
-  height: 44px;
-  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-  border-radius: var(--radius-sm);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--white);
-  font-size: 1.4rem;
+.logo-image {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
 }
 
 .search-bar {
