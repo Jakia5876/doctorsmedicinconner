@@ -454,7 +454,12 @@ input, select, textarea { font-family: inherit; outline: none; border: none; }
   position: relative;
   overflow: hidden;
 }
-.product-img img { width: 100%; height: 100%; object-fit: cover; }
+.product-img img, 
+.product-img video { 
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
 .product-actions {
   position: absolute;
   bottom: -50px;
