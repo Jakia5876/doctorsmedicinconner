@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doctors Medicin Conner - Your Trusted Online Pharmacy</title>
+  <meta name="description" content="Doctors Medicin Conner - Shop genuine medicines, healthcare products, and wellness essentials online. Fast delivery, certified products, and expert consultation.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📞 Helpline: <a href="tel:+88001716779220">+88001716779220</a> (24/7 Support)</span>
+      <div style="display:flex;gap:20px;align-items:center;">
+        <a href="#">🚚 Track Order</a>
+        <a href="#">📋 Upload Prescription</a>
+        <a href="contact.html">Need Help?</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+        Doctors Medicin Conner
+      </a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search medicines, health products..." id="searchInput">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn" onclick="window.location.href='#'">
+          <span class="icon"><i class="far fa-user"></i></span>
+          Account
+        </button>
+        <button class="nav-btn" onclick="window.location.href='#'">
+          <span class="icon"><i class="far fa-heart"></i></span>
+          Wishlist
+        </button>
+        <button class="nav-btn" onclick="window.location.href='cart.html'">
+          <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          <span class="cart-count" id="cartCount">3</span>
+          Cart
+        </button>
+        <button class="mobile-toggle" id="mobileToggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Nav Menu -->
+  <div class="nav-menu" id="navMenu">
+    <div class="container">
+      <a href="index.html" class="active">Home</a>
+      <a href="shop.html">All Medicines</a>
+      <a href="shop.html">OTC Drugs</a>
+      <a href="shop.html">Healthcare Devices</a>
+      <a href="shop.html">Personal Care</a>
+      <a href="shop.html">Vitamins & Supplements</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge">⚕️ Licensed & Certified Pharmacy</div>
+        <h1>Your Health, Our Priority — Medicines Delivered to You</h1>
+        <p>Get genuine medicines, healthcare products, and expert consultation from the comfort of your home. Fast delivery and best prices guaranteed.</p>
+        <div class="hero-buttons">
+          <a href="shop.html" class="btn btn-white btn-lg">🛒 Shop Now</a>
+          <a href="#categories" class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.4);color:#fff;">Browse Categories</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-visual">🏥</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Features Bar -->
+  <div class="features-bar">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-truck-fast"></i></div>
+          <div>
+            <h4>Free Delivery</h4>
+            <p>On orders above $50</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-shield-halved"></i></div>
+          <div>
+            <h4>100% Genuine</h4>
+            <p>Certified medicines only</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <div>
+            <h4>24/7 Support</h4>
+            <p>Expert pharmacist help</p>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-rotate-left"></i></div>
+          <div>
+            <h4>Easy Returns</h4>
+            <p>Hassle-free return policy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Categories Section -->
+  <section class="section" id="categories">
+    <div class="container">
+      <div class="section-header">
+        <h2>Shop by Category</h2>
+        <p>Browse our wide range of healthcare categories to find exactly what you need</p>
+        <div class="line"></div>
+      </div>
+      <div class="categories-grid">
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">💊</div>
+          <h3>Prescription Drugs</h3>
+          <span>1200+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">🩹</div>
+          <h3>OTC Medicines</h3>
+          <span>800+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">🫀</div>
+          <h3>Heart & BP Care</h3>
+          <span>350+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">🧴</div>
+          <h3>Skin Care</h3>
+          <span>500+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">💉</div>
+          <h3>Diabetes Care</h3>
+          <span>420+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">🦴</div>
+          <h3>Bone & Joint</h3>
+          <span>280+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">🧬</div>
+          <h3>Vitamins & Supplements</h3>
+          <span>600+ Products</span>
+        </a>
+        <a href="shop.html" class="category-card">
+          <div class="category-icon">🩺</div>
+          <h3>Medical Devices</h3>
+          <span>200+ Products</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Products -->
+  <section class="section" style="background:var(--gray-50);">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular Products</h2>
+        <p>Top-selling medicines and healthcare essentials trusted by thousands</p>
+        <div class="line"></div>
+      </div>
+      <div class="products-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+          <span class="product-badge">-20%</span>
+          <div class="product-img">💊</div>
+          <div class="product-info">
+            <div class="product-category">Pain Relief</div>
+            <h3>Paracetamol 500mg - Pack of 20 Tablets</h3>
+            <div class="product-price">
+              <span class="price-current">$4.99</span>
+              <span class="price-old">$6.25</span>
+            </div>
+            <div class="product-rating">★★★★★ <span>(128 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 2 -->
+        <div class="product-card">
+          <span class="product-badge new">New</span>
+          <div class="product-img">🧴</div>
+          <div class="product-info">
+            <div class="product-category">Skin Care</div>
+            <h3>CeraVe Moisturizing Cream 340g</h3>
+            <div class="product-price">
+              <span class="price-current">$18.50</span>
+            </div>
+            <div class="product-rating">★★★★☆ <span>(95 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 3 -->
+        <div class="product-card">
+          <span class="product-badge hot">Hot</span>
+          <div class="product-img">🧬</div>
+          <div class="product-info">
+            <div class="product-category">Vitamins</div>
+            <h3>Vitamin D3 5000 IU - 120 Softgels</h3>
+            <div class="product-price">
+              <span class="price-current">$12.99</span>
+              <span class="price-old">$16.99</span>
+            </div>
+            <div class="product-rating">★★★★★ <span>(234 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 4 -->
+        <div class="product-card">
+          <div class="product-img">🩺</div>
+          <div class="product-info">
+            <div class="product-category">Medical Devices</div>
+            <h3>Digital Blood Pressure Monitor</h3>
+            <div class="product-price">
+              <span class="price-current">$39.99</span>
+              <span class="price-old">$54.99</span>
+            </div>
+            <div class="product-rating">★★★★★ <span>(312 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 5 -->
+        <div class="product-card">
+          <span class="product-badge">-15%</span>
+          <div class="product-img">💉</div>
+          <div class="product-info">
+            <div class="product-category">Diabetes Care</div>
+            <h3>Blood Glucose Test Strips - 50 Pack</h3>
+            <div class="product-price">
+              <span class="price-current">$22.99</span>
+              <span class="price-old">$27.00</span>
+            </div>
+            <div class="product-rating">★★★★☆ <span>(87 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 6 -->
+        <div class="product-card">
+          <span class="product-badge new">New</span>
+          <div class="product-img">🫀</div>
+          <div class="product-info">
+            <div class="product-category">Heart Care</div>
+            <h3>Omega-3 Fish Oil 1000mg - 90 Capsules</h3>
+            <div class="product-price">
+              <span class="price-current">$15.49</span>
+            </div>
+            <div class="product-rating">★★★★★ <span>(156 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="product-img">🩹</div>
+          <div class="product-info">
+            <div class="product-category">First Aid</div>
+            <h3>Premium First Aid Kit - 200 Pieces</h3>
+            <div class="product-price">
+              <span class="price-current">$29.99</span>
+              <span class="price-old">$39.99</span>
+            </div>
+            <div class="product-rating">★★★★★ <span>(203 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+        <!-- Product 8 -->
+        <div class="product-card">
+          <span class="product-badge hot">Hot</span>
+          <div class="product-img">🦴</div>
+          <div class="product-info">
+            <div class="product-category">Bone & Joint</div>
+            <h3>Calcium + Vitamin D3 Supplements</h3>
+            <div class="product-price">
+              <span class="price-current">$11.99</span>
+              <span class="price-old">$14.99</span>
+            </div>
+            <div class="product-rating">★★★★☆ <span>(174 reviews)</span></div>
+            <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:40px;">
+        <a href="shop.html" class="btn btn-primary btn-lg">View All Products →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Promo Banner -->
+  <section class="promo-banner">
+    <div class="container" style="position:relative;z-index:1;">
+      <h2>Upload Your Prescription & Get 25% OFF</h2>
+      <p>Simply upload your prescription and our pharmacists will prepare your order with guaranteed genuine medicines.</p>
+      <a href="#" class="btn btn-white btn-lg">📋 Upload Prescription</a>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>What Our Customers Say</h2>
+        <p>Trusted by thousands of customers across the country</p>
+        <div class="line"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Excellent service! The medicines were delivered within a few hours. Genuine products at great prices. Highly recommended!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">RK</div>
+            <div>
+              <h4>Rahul Kumar</h4>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"I've been ordering my regular medications from Doctors Medicin Conner for 6 months. The prescription upload feature is so convenient!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">SP</div>
+            <div>
+              <h4>Sarah Patel</h4>
+              <span>Regular Customer</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"The pharmacist consultation saved me from a potential drug interaction. The team really cares about patient safety. Amazing experience!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">MA</div>
+            <div>
+              <h4>Michael Adams</h4>
+              <span>Verified Buyer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="newsletter">
+    <div class="container">
+      <h2>Stay Healthy, Stay Updated</h2>
+      <p>Subscribe to get health tips, exclusive offers, and new product alerts straight to your inbox.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+            Doctors Medicin Conner
+          </a>
+          <p>Your trusted online pharmacy for genuine medicines, healthcare products, and wellness essentials. Licensed and certified to serve you better.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="shop.html">All Medicines</a>
+          <a href="shop.html">Healthcare Devices</a>
+          <a href="shop.html">Vitamins & Supplements</a>
+          <a href="shop.html">Personal Care</a>
+          <a href="about.html">About Us</a>
+          <a href="contact.html">Contact Us</a>
+        </div>
+        <div class="footer-col">
+          <h4>Customer Service</h4>
+          <a href="#">My Account</a>
+          <a href="cart.html">My Cart</a>
+          <a href="#">Track Order</a>
+          <a href="#">Return Policy</a>
+          <a href="#">Shipping Info</a>
+          <a href="#">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Info</h4>
+          <a href="#">📍 123 Medical Street, Health City</a>
+          <a href="tel:+88001716779220">📞 +88001716779220</a>
+          <a href="mailto:info@DMC.com">✉️ info@DMC.com</a>
+          <a href="#">🕐 Mon-Sat: 8AM - 10PM</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Doctors Medicin Conner. All Rights Reserved.</span>
+        <div class="payment-methods">
+          <span>💳 Visa</span>
+          <span>💳 Mastercard</span>
+          <span>💳 PayPal</span>
+          <span>💳 GPay</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

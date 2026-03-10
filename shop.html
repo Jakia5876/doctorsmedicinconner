@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop All Medicines - Doctors Medicin Conner</title>
+  <meta name="description" content="Browse and shop genuine medicines, healthcare products, vitamins, and medical devices at Doctors Medicin Conner.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <span>📞 Helpline: <a href="tel:+88001716779220">+88001716779220</a> (24/7 Support)</span>
+      <div style="display:flex;gap:20px;align-items:center;">
+        <a href="#">🚚 Track Order</a>
+        <a href="#">📋 Upload Prescription</a>
+        <a href="contact.html">Need Help?</a>
+      </div>
+    </div>
+  </div>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon"><i class="fas fa-heartbeat"></i></div>
+        Doctors Medicin Conner
+      </a>
+      <div class="search-bar">
+        <input type="text" placeholder="Search medicines, health products..." id="searchInput">
+        <button><i class="fas fa-search"></i></button>
+      </div>
+      <div class="nav-actions">
+        <button class="nav-btn"><span class="icon"><i class="far fa-user"></i></span>Account</button>
+        <button class="nav-btn"><span class="icon"><i class="far fa-heart"></i></span>Wishlist</button>
+        <button class="nav-btn" onclick="window.location.href='cart.html'">
+          <span class="icon"><i class="fas fa-shopping-cart"></i></span>
+          <span class="cart-count" id="cartCount">3</span>Cart
+        </button>
+        <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav-menu" id="navMenu">
+    <div class="container">
+      <a href="index.html">Home</a>
+      <a href="shop.html" class="active">All Medicines</a>
+      <a href="shop.html">OTC Drugs</a>
+      <a href="shop.html">Healthcare Devices</a>
+      <a href="shop.html">Personal Care</a>
+      <a href="shop.html">Vitamins & Supplements</a>
+      <a href="about.html">About Us</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <!-- Page Header -->
+  <div class="page-header">
+    <div class="container">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a> / <span>Shop All</span>
+      </div>
+      <h1>All Medicines & Products</h1>
+    </div>
+  </div>
+
+  <!-- Shop Layout -->
+  <div class="container">
+    <div class="shop-layout">
+      <!-- Sidebar Filters -->
+      <aside class="filter-sidebar">
+        <div class="filter-group">
+          <h4>Categories</h4>
+          <label><input type="checkbox"> Pain Relief (45)</label>
+          <label><input type="checkbox"> Vitamins (62)</label>
+          <label><input type="checkbox"> Heart Care (38)</label>
+          <label><input type="checkbox"> Diabetes (41)</label>
+          <label><input type="checkbox"> Skin Care (55)</label>
+          <label><input type="checkbox"> First Aid (29)</label>
+          <label><input type="checkbox"> Bone & Joint (33)</label>
+          <label><input type="checkbox"> Medical Devices (24)</label>
+        </div>
+        <div class="filter-group">
+          <h4>Price Range</h4>
+          <div class="price-inputs">
+            <input type="number" placeholder="Min">
+            <span>—</span>
+            <input type="number" placeholder="Max">
+          </div>
+          <button class="btn btn-sm btn-primary" style="margin-top:12px;width:100%;">Apply</button>
+        </div>
+        <div class="filter-group">
+          <h4>Brand</h4>
+          <label><input type="checkbox"> Pfizer (18)</label>
+          <label><input type="checkbox"> Johnson & Johnson (22)</label>
+          <label><input type="checkbox"> Abbott (15)</label>
+          <label><input type="checkbox"> Bayer (12)</label>
+          <label><input type="checkbox"> Cipla (20)</label>
+        </div>
+        <div class="filter-group">
+          <h4>Rating</h4>
+          <label><input type="checkbox"> ★★★★★ (4.5+)</label>
+          <label><input type="checkbox"> ★★★★☆ (4.0+)</label>
+          <label><input type="checkbox"> ★★★☆☆ (3.0+)</label>
+        </div>
+      </aside>
+
+      <!-- Products Section -->
+      <div>
+        <div class="sort-bar">
+          <span style="color:var(--gray-500);font-size:0.95rem;">Showing <strong>1-12</strong> of <strong>248</strong> products</span>
+          <select>
+            <option>Sort by: Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest First</option>
+            <option>Best Rating</option>
+          </select>
+        </div>
+        <div class="products-grid">
+          <div class="product-card">
+            <span class="product-badge">-20%</span>
+            <div class="product-img">💊</div>
+            <div class="product-info">
+              <div class="product-category">Pain Relief</div>
+              <h3>Paracetamol 500mg - Pack of 20</h3>
+              <div class="product-price"><span class="price-current">$4.99</span><span class="price-old">$6.25</span></div>
+              <div class="product-rating">★★★★★ <span>(128)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <span class="product-badge new">New</span>
+            <div class="product-img">🧴</div>
+            <div class="product-info">
+              <div class="product-category">Skin Care</div>
+              <h3>CeraVe Moisturizing Cream 340g</h3>
+              <div class="product-price"><span class="price-current">$18.50</span></div>
+              <div class="product-rating">★★★★☆ <span>(95)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <span class="product-badge hot">Hot</span>
+            <div class="product-img">🧬</div>
+            <div class="product-info">
+              <div class="product-category">Vitamins</div>
+              <h3>Vitamin D3 5000 IU - 120 Softgels</h3>
+              <div class="product-price"><span class="price-current">$12.99</span><span class="price-old">$16.99</span></div>
+              <div class="product-rating">★★★★★ <span>(234)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🩺</div>
+            <div class="product-info">
+              <div class="product-category">Medical Devices</div>
+              <h3>Digital Blood Pressure Monitor</h3>
+              <div class="product-price"><span class="price-current">$39.99</span><span class="price-old">$54.99</span></div>
+              <div class="product-rating">★★★★★ <span>(312)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <span class="product-badge">-15%</span>
+            <div class="product-img">💉</div>
+            <div class="product-info">
+              <div class="product-category">Diabetes Care</div>
+              <h3>Blood Glucose Test Strips - 50 Pack</h3>
+              <div class="product-price"><span class="price-current">$22.99</span><span class="price-old">$27.00</span></div>
+              <div class="product-rating">★★★★☆ <span>(87)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <span class="product-badge new">New</span>
+            <div class="product-img">🫀</div>
+            <div class="product-info">
+              <div class="product-category">Heart Care</div>
+              <h3>Omega-3 Fish Oil 1000mg - 90 Caps</h3>
+              <div class="product-price"><span class="price-current">$15.49</span></div>
+              <div class="product-rating">★★★★★ <span>(156)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🩹</div>
+            <div class="product-info">
+              <div class="product-category">First Aid</div>
+              <h3>Premium First Aid Kit - 200 Pieces</h3>
+              <div class="product-price"><span class="price-current">$29.99</span><span class="price-old">$39.99</span></div>
+              <div class="product-rating">★★★★★ <span>(203)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <span class="product-badge hot">Hot</span>
+            <div class="product-img">🦴</div>
+            <div class="product-info">
+              <div class="product-category">Bone & Joint</div>
+              <h3>Calcium + Vitamin D3 Supplements</h3>
+              <div class="product-price"><span class="price-current">$11.99</span><span class="price-old">$14.99</span></div>
+              <div class="product-rating">★★★★☆ <span>(174)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+          <div class="product-card">
+            <div class="product-img">🧪</div>
+            <div class="product-info">
+              <div class="product-category">Diagnostics</div>
+              <h3>Digital Thermometer - Infrared</h3>
+              <div class="product-price"><span class="price-current">$19.99</span></div>
+              <div class="product-rating">★★★★★ <span>(89)</span></div>
+              <button class="add-to-cart-btn"><i class="fas fa-cart-plus"></i> Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Newsletter -->
+  <section class="newsletter" style="margin-top:60px;">
+    <div class="container">
+      <h2>Stay Healthy, Stay Updated</h2>
+      <p>Subscribe to get health tips, exclusive offers, and new product alerts.</p>
+      <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing!');">
+        <input type="email" placeholder="Enter your email address" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand">
+          <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-heartbeat"></i></div>Doctors Medicin Conner</a>
+          <p>Your trusted online pharmacy for genuine medicines, healthcare products, and wellness essentials.</p>
+          <div class="footer-social">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="shop.html">All Medicines</a><a href="shop.html">Healthcare Devices</a><a href="shop.html">Vitamins</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Customer Service</h4><a href="#">My Account</a><a href="cart.html">My Cart</a><a href="#">Track Order</a><a href="#">Return Policy</a><a href="#">FAQ</a></div>
+        <div class="footer-col"><h4>Contact Info</h4><a href="#">📍 123 Medical Street</a><a href="tel:+88001716779220">📞 +88001716779220</a><a href="mailto:info@DMC.com">✉️ info@DMC.com</a></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Doctors Medicin Conner. All Rights Reserved.</span>
+        <div class="payment-methods"><span>💳 Visa</span><span>💳 Mastercard</span><span>💳 PayPal</span></div>
+      </div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

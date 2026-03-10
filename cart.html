@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shopping Cart - Doctors Medicin Conner</title>
+  <meta name="description" content="Review your cart and checkout at Doctors Medicin Conner.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+  <div class="top-bar"><div class="container"><span>📞 Helpline: <a href="tel:+88001716779220">+88001716779220</a> (24/7)</span><div style="display:flex;gap:20px;align-items:center;"><a href="#">🚚 Track Order</a><a href="contact.html">Need Help?</a></div></div></div>
+  <nav class="navbar"><div class="container">
+    <a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-heartbeat"></i></div>Doctors Medicin Conner</a>
+    <div class="search-bar"><input type="text" placeholder="Search medicines..." id="searchInput"><button><i class="fas fa-search"></i></button></div>
+    <div class="nav-actions">
+      <button class="nav-btn"><span class="icon"><i class="far fa-user"></i></span>Account</button>
+      <button class="nav-btn" onclick="window.location.href='cart.html'"><span class="icon"><i class="fas fa-shopping-cart"></i></span><span class="cart-count" id="cartCount">3</span>Cart</button>
+      <button class="mobile-toggle" id="mobileToggle"><i class="fas fa-bars"></i></button>
+    </div>
+  </div></nav>
+  <div class="nav-menu" id="navMenu"><div class="container">
+    <a href="index.html">Home</a><a href="shop.html">All Medicines</a><a href="about.html">About Us</a><a href="contact.html">Contact</a>
+  </div></div>
+
+  <div class="page-header"><div class="container"><div class="breadcrumb"><a href="index.html">Home</a> / <span>Shopping Cart</span></div><h1>Your Shopping Cart</h1></div></div>
+
+  <div class="container">
+    <div class="cart-layout">
+      <div>
+        <table class="cart-table">
+          <thead><tr><th>Product</th><th>Price</th><th>Qty</th><th>Subtotal</th><th></th></tr></thead>
+          <tbody>
+            <tr>
+              <td><div class="cart-product"><div class="cart-product-img">💊</div><div><h4>Paracetamol 500mg - Pack of 20</h4><span>Pain Relief</span></div></div></td>
+              <td><strong>$4.99</strong></td>
+              <td><div class="qty-control"><button onclick="updateQty(this,-1)">−</button><input type="number" value="2" min="1" max="10"><button onclick="updateQty(this,1)">+</button></div></td>
+              <td><strong>$9.98</strong></td>
+              <td><button class="remove-btn" title="Remove"><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+              <td><div class="cart-product"><div class="cart-product-img">🧬</div><div><h4>Vitamin D3 5000 IU - 120 Softgels</h4><span>Vitamins</span></div></div></td>
+              <td><strong>$12.99</strong></td>
+              <td><div class="qty-control"><button onclick="updateQty(this,-1)">−</button><input type="number" value="1" min="1" max="10"><button onclick="updateQty(this,1)">+</button></div></td>
+              <td><strong>$12.99</strong></td>
+              <td><button class="remove-btn" title="Remove"><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+            <tr>
+              <td><div class="cart-product"><div class="cart-product-img">🩺</div><div><h4>Digital Blood Pressure Monitor</h4><span>Medical Devices</span></div></div></td>
+              <td><strong>$39.99</strong></td>
+              <td><div class="qty-control"><button onclick="updateQty(this,-1)">−</button><input type="number" value="1" min="1" max="10"><button onclick="updateQty(this,1)">+</button></div></td>
+              <td><strong>$39.99</strong></td>
+              <td><button class="remove-btn" title="Remove"><i class="fas fa-trash-alt"></i></button></td>
+            </tr>
+          </tbody>
+        </table>
+        <div style="display:flex;gap:12px;margin-top:24px;flex-wrap:wrap;">
+          <a href="shop.html" class="btn btn-outline btn-sm">← Continue Shopping</a>
+        </div>
+      </div>
+      <div class="cart-summary">
+        <h3>Order Summary</h3>
+        <div class="summary-row"><span>Subtotal (4 items)</span><span>$62.96</span></div>
+        <div class="summary-row"><span>Shipping</span><span style="color:var(--success);font-weight:600;">FREE</span></div>
+        <div class="summary-row"><span>Tax (5%)</span><span>$3.15</span></div>
+        <div class="summary-row total"><span>Total</span><span>$66.11</span></div>
+        <button class="btn btn-primary btn-lg" onclick="alert('Order placed successfully! Thank you.')">Proceed to Checkout</button>
+        <div class="coupon-input">
+          <input type="text" placeholder="Coupon code">
+          <button class="btn btn-outline btn-sm">Apply</button>
+        </div>
+        <div style="margin-top:20px;padding-top:16px;border-top:1px solid var(--gray-200);">
+          <div style="display:flex;align-items:center;gap:8px;font-size:0.85rem;color:var(--gray-500);margin-bottom:8px;"><i class="fas fa-shield-halved" style="color:var(--primary);"></i> 100% Genuine Products</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:0.85rem;color:var(--gray-500);margin-bottom:8px;"><i class="fas fa-truck-fast" style="color:var(--primary);"></i> Free Delivery on Orders $50+</div>
+          <div style="display:flex;align-items:center;gap:8px;font-size:0.85rem;color:var(--gray-500);"><i class="fas fa-rotate-left" style="color:var(--primary);"></i> Easy 30-Day Returns</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top:60px;">
+    <div class="container">
+      <div class="footer-main">
+        <div class="footer-brand"><a href="index.html" class="logo"><div class="logo-icon"><i class="fas fa-heartbeat"></i></div>Doctors Medicin Conner</a><p>Your trusted online pharmacy.</p></div>
+        <div class="footer-col"><h4>Quick Links</h4><a href="shop.html">All Medicines</a><a href="about.html">About Us</a><a href="contact.html">Contact</a></div>
+        <div class="footer-col"><h4>Service</h4><a href="#">My Account</a><a href="#">Track Order</a><a href="#">FAQ</a></div>
+        <div class="footer-col"><h4>Contact</h4><a href="tel:+88001716779220">📞 +88001716779220</a><a href="mailto:info@DMC.com">✉️ info@DMC.com</a></div>
+      </div>
+      <div class="footer-bottom"><span>© 2026 Doctors Medicin Conner.</span><div class="payment-methods"><span>💳 Visa</span><span>💳 Mastercard</span><span>💳 PayPal</span></div></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
