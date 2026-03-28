@@ -95,7 +95,7 @@ input, select, textarea { font-family: inherit; outline: none; border: none; }
   white-space: nowrap;
 }
 .logo-image {
-  height: 48px;
+  height: 70px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
